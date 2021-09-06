@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:backgroundTint="@color/cardview_dark_background"
+
+    android:id="@+id/linearLayout"
+
+    tools:context=".LoginActivity">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:focusable="true"
+                android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50sp"
+                android:text="Welcome To"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza House"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:id="@+id/logo"
+                android:src="@drawable/spisa"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="62dp"
+                android:background="@drawable/blue_border">
+
+                <!-- INPUT -->
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/username_iconsss"
+                    android:background="@android:color/transparent"
+                    android:hint="Username"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textCursorDrawable="@drawable/ic_email"
+                    android:textSize="12sp" />
+
+                <!-- ICON -->
+                <ImageView
+                    android:id="@+id/username_iconsss"
+                    android:layout_width="14.7dp"
+                    android:layout_height="10.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/ic_person" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="62dp"
+                android:background="@drawable/blue_border">
+
+                <!-- INPUT -->
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="          Password"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:textCursorDrawable="@drawable/ic_email"
+                    android:textSize="12sp" />
+
+                <!-- ICON -->
+                <ImageView
+
+                    android:layout_width="14.7dp"
+                    android:layout_height="10.3dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/ic_baseline_vpn_key_24" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@+id/layout_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Login"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:background="#00121111"
+                android:textAllCaps="false"
+                android:layout_marginTop="40dp"
+                app:layout_constraintWidth_percent="0.7"
+                style="?android:attr/borderlessButtonStyle"
+                android:elevation="2dp"
+                android:onClick="performSignUp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:text="Don't have account?"/>
+
+
+            <Button
+                android:id="@+id/bt_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:onClick="goToSignup"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:backgroundTint="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

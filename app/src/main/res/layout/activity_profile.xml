@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".ProfileActivity">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+android:layout_gravity="center"
+        android:src="@drawable/ic_person" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/blue_border">
+
+        <!-- INPUT -->
+        <TextView
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/username_icon"
+            android:background="@android:color/transparent"
+
+            android:hint="First Name"
+            android:maxLines="1"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textCursorDrawable="@drawable/ic_person"
+            android:textSize="12sp" />
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/username_icon"
+            android:layout_width="14.7dp"
+            android:layout_height="10.3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/ic_person" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="20.7dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/blue_border">
+
+        <!-- INPUT -->
+        <TextView
+            android:id="@+id/lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/username_icons"
+            android:background="@android:color/transparent"
+            android:hint="Last Name"
+            android:maxLines="1"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textCursorDrawable="@drawable/ic_person"
+            android:textSize="12sp" />
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/username_icons"
+            android:layout_width="14.7dp"
+            android:layout_height="10.3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/ic_person" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/blue_border">
+
+        <!-- INPUT -->
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/username_iconsxss"
+            android:background="@android:color/transparent"
+            android:hint="Phone Number"
+            android:maxLines="1"
+            android:inputType="number"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textCursorDrawable="@drawable/ic_person"
+            android:textSize="12sp" />
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/username_iconsxss"
+            android:layout_width="14.7dp"
+            android:layout_height="10.3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/ic_person" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/blue_border">
+
+        <!-- INPUT -->
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/username_iconsss"
+            android:background="@android:color/transparent"
+            android:hint="Username"
+            android:maxLines="1"
+            android:paddingLeft="17dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textCursorDrawable="@drawable/ic_email"
+            android:textSize="12sp" />
+
+        <!-- ICON -->
+        <ImageView
+            android:id="@+id/username_iconsss"
+            android:layout_width="14.7dp"
+            android:layout_height="10.3dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/ic_email" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/update"
+        android:layout_gravity="center"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="18.7dp"
+        android:layout_marginRight="62dp"
+      android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Logout"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+</LinearLayout>

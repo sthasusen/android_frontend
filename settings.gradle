@@ -1,0 +1,3 @@
+include ':notificationwear'
+include ':app'
+rootProject.name = "Onlinefoodorder"
